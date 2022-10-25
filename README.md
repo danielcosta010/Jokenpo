@@ -1,2 +1,2 @@
 # Jokenpo
- Jogo pedra pael tesoura, desenvolvido em HTML, CSS e JavaScript
+ Jogo pedra, papel, tesoura, desenvolvido em HTML, CSS e JavaScript.
