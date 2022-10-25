@@ -10,26 +10,34 @@
 <body>
   <main class="container">
     <h1>Jogo Jokenpô | Pedra, Papel, Tesoura</h1>
-    <h2>Jogador</h2>
+    <h2 class="titulo__secundario">Jogador</h2>
     <form action="" id="frmjokenpo">
-      <label for="pedra" class="form__img">
-          <input type="radio" name="grupo" id="pedra">Pedra
-          <div class="pedra"></div>
-      </label>
+      <div class="form__icones">
+        <label for="pedra" class="form__img">
+            <input type="radio" name="grupo" id="pedra" class="input__radio">Pedra
+            <div class="pedra"></div>
+        </label>
+        
+        <label for="papel" class="form__img">
+          <input type="radio" name="grupo" id="papel" class="input__radio">Papel
+          <div class="papel"></div>
+        </label>
+        <label for="tesoura" class="form__img">
+          <input type="radio" name="grupo" id="tesoura" class="input__radio">Tesoura
+          <div class="tesoura"></div>
+        </label>
+      </div>
+
+      <input type="button" value="Jogar" class="botao botao__jogar" onclick="jogar()">
+      <input type="reset" value="reset" class="botao botao__reset" onclick="resetar()">
       
-      <label for="papel" class="form__img">
-        <input type="radio" name="grupo" id="papel">Papel
-        <div class="papel"></div>
-      </label>
-      <label for="tesoura" class="form__img">
-        <input type="radio" name="grupo" id="tesoura">Tesoura
-        <div class="tesoura"></div>
-      </label>
     </form>
-    <button>Jogar</button>
-    <button type="submit">Reset</button>
+    
+   
     <hr>
-    <h2>Computador</h2>
+    <h2 class="titulo__secundario">Computador</h2>
+
+    <img src="img/pcpedra.png" alt="imagem de uma tela de computador" class="computador">
   </main>
 </body>
 </html>

@@ -6,9 +6,12 @@
   text-align: center;
   margin: 30px 0;
 }
-#frmjokenpo {
-  display: flex;
-  justify-content: space-around;
+.titulo__secundario {
+  margin: 30px 0;
+}
+.form__icones {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   margin: 30px 0;
 }
 .form__img {
@@ -20,37 +23,43 @@ img {
   width: 100px;
 }
 
-input {
+.input__radio {
   display: none;
 }
-
 .pedra::after {
   content: url(img/pedra.png);
-  background-size: 10px;
 }
 #pedra:checked ~ .pedra::after {
   content: url(img/pedraSelecionada.png);
 }
 .papel::after {
   content: url(img/papel.png);
-
 }
 #papel:checked ~ .papel::after {
   content: url(img/papelSelecionada.png);
 }
+.tesoura {
+  grid-area: icone;
+}
 .tesoura::after {
   content: url(img/tesoura.png);
-
 }
 #tesoura:checked ~ .tesoura::after {
   content: url(img/tesouraSelecionada.png);
 }
-
-button {
+.botao {
   background-color: rgb(97, 97, 181);
   border: none;
   border-radius: 20px;
+  cursor: pointer;
   margin-bottom: 10px;
   padding: 10px;
+  transition: .3s ease-in-out;
   width: 100px;
+}
+.botao:hover {
+  opacity: .8;
+}
+.computador {
+  width: 70vw;
 }
