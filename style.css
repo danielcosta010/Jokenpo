@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  text-align: center;
+  margin: 30px 0;
+}
+#frmjokenpo {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 0;
+}
+.form__img {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 10px;
+}
+img {
+  width: 100px;
+}
+
+input {
+  display: none;
+}
+
+.pedra::after {
+  content: url(img/pedra.png);
+  background-size: 10px;
+}
+#pedra:checked ~ .pedra::after {
+  content: url(img/pedraSelecionada.png);
+}
+.papel::after {
+  content: url(img/papel.png);
+
+}
+#papel:checked ~ .papel::after {
+  content: url(img/papelSelecionada.png);
+}
+.tesoura::after {
+  content: url(img/tesoura.png);
+
+}
+#tesoura:checked ~ .tesoura::after {
+  content: url(img/tesouraSelecionada.png);
+}
+
+button {
+  background-color: rgb(97, 97, 181);
+  border: none;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100px;
+}
