@@ -7,7 +7,10 @@
   text-align: center;
 }
 .titulo__secundario {
-  margin: 30px 0;
+  margin: 20px 0;
+}
+.textos {
+  height: .1rem;
 }
 .form__icones {
   display: grid;

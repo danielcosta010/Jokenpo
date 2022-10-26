@@ -6,6 +6,7 @@ var pc = document.querySelector('#pc');
 var placar = document.querySelector('#placar');
 var joga = document.querySelector('.botao__jogar');
 var resete = document.querySelector('.botao__reset');
+var audio = new Audio('./music/jokenpo.mp3');
 
 
 function jogar() {
@@ -28,11 +29,11 @@ function jogar() {
         pc.src = './img/pctesoura.png';
         break;
     }
-    if ((pedra.checked == true && sorteio == 0) || (papel.checked == true && sorteio == 1) || (tesoura.checked == true && sorteio ==2)) {
+    if ((pedra.checked && sorteio == 0) || (papel.checked && sorteio == 1) || (tesoura.checked && sorteio ==2)) {
 
       placar.innerHTML = '<<<<<< Empate >>>>>>';
 
-    } else if ((pedra.checked == true && sorteio == 2) || (papel.checked == true && sorteio == 0) || (tesoura.checked == true && sorteio == 1)) {
+    } else if ((pedra.checked && sorteio == 2) || (papel.checked && sorteio == 0) || (tesoura.checked && sorteio == 1)) {
 
       placar.innerHTML = '<<<<<< Voce venceu!!!! 😁😁😁😁>>>>>>';
      
@@ -49,10 +50,8 @@ function resetar() {
  aviso.innerHTML = '';
 }
 resete.addEventListener('click', resetar);
+pedra.addEventListener('click', resetar);
+papel.addEventListener('click', resetar);
+tesoura.addEventListener('click', resetar);
 
-function limpaAviso() {
-    aviso.innerHTML = '';
-}
-pedra.addEventListener('click', limpaAviso);
-papel.addEventListener('click', limpaAviso);
-tesoura.addEventListener('click', limpaAviso);
+audio.play();
