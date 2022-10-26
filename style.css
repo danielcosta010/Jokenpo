@@ -22,8 +22,8 @@
   flex-direction: column-reverse;
   gap: 10px;
 }
-img {
-  width: 100px;
+#frmjokenpo {
+  margin: 0 20%;
 }
 
 .input__radio {
@@ -64,5 +64,13 @@ img {
   opacity: .8;
 }
 .computador {
-  width: 70vw;
+  width: 450px;
+}
+@media (max-width: 500px) {
+  .computador {
+    width: 90vw;
+  }
+  #frmjokenpo {
+    margin: 0;
+  }
 }
