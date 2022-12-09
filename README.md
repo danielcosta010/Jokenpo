@@ -10,7 +10,7 @@
 | :fire: Desafio     | https://url-do-desafio.com.br
 
 <!-- Inserir imagem com a #vitrinedev ao final do link -->
-![Foto da capa da projeto](https://github.com/danielcosta010/Jokenpo/blob/master/img/capaJokenpo.png?raw=true#vitrinedev)
+![Foto da capa da projeto](https://github.com/danielcosta010/Jokenpo/blob/master/img/capaJokenpo.png#vitrinedev)
 
 ## Detalhes do projeto
 
