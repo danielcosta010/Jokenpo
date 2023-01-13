@@ -11,6 +11,7 @@
 }
 .textos {
   height: .1rem;
+  margin-top: .5rem;
 }
 .form__icones {
   display: grid;
@@ -30,25 +31,25 @@
   display: none;
 }
 .pedra::after {
-  content: url(img/pedra.png);
+  content: url(../img/pedra.png);
 }
 #pedra:checked ~ .pedra::after {
-  content: url(img/pedraSelecionada.png);
+  content: url(../img/pedraSelecionada.png);
 }
 .papel::after {
-  content: url(img/papel.png);
+  content: url(../img/papel.png);
 }
 #papel:checked ~ .papel::after {
-  content: url(img/papelSelecionada.png);
+  content: url(../img/papelSelecionada.png);
 }
 .tesoura {
   grid-area: icone;
 }
 .tesoura::after {
-  content: url(img/tesoura.png);
+  content: url(../img/tesoura.png);
 }
 #tesoura:checked ~ .tesoura::after {
-  content: url(img/tesouraSelecionada.png);
+  content: url(../img/tesouraSelecionada.png);
 }
 .botao {
   background-color: rgb(97, 97, 181);
@@ -66,9 +67,18 @@
 .computador {
   width: 450px;
 }
+
+.pontos__jogador, .pontos__computador {
+  background-color: rgb(237, 237, 139);
+  border: 1.5px solid;
+  border-radius: 5px;
+  margin: 1rem;
+  padding: .3rem .5rem;
+}
 @media (max-width: 500px) {
   .computador {
     width: 90vw;
+    margin-top: .7rem;
   }
   #frmjokenpo {
     margin: 0;
