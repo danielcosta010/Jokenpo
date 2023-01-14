@@ -6,7 +6,7 @@
 | -------------  | --- |
 | :sparkles: Nome        | **Jogo JoKenPo**
 | :label: Tecnologias | HTML5, CSS3, Java Script (tecnologias utilizadas)
-| :rocket: URL         | https://danielcosta010.github.io/Jokenpo/
+| :rocket: URL         | <a href="https://danielcosta010.github.io/Jokenpo/" target="blank">Acesse o jogo aqui!</a>
 | :fire: Desafio     | https://url-do-desafio.com.br
 
 <!-- Inserir imagem com a #vitrinedev ao final do link -->
