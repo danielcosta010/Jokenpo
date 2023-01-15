@@ -1,16 +1,19 @@
-var pedra = document.querySelector('#pedra');
-var papel = document.querySelector('#papel');
-var tesoura = document.querySelector('#tesoura');
-var aviso = document.querySelector('.aviso');
-var pc = document.querySelector('#pc');
-var placar = document.querySelector('#placar');
-var joga = document.querySelector('.botao__jogar');
-var resete = document.querySelector('.botao__reset');
+var $ = document.querySelector.bind(document);
+
+var pedra = $('#pedra');
+var papel = $('#papel');
+var tesoura = $('#tesoura');
+var aviso = $('.aviso');
+var pc = $('#pc');
+var placar = $('#placar');
+var joga = $('.botao__jogar');
+var resete = $('.botao__reset');
 
 var audio = new Audio('./music/jokenpo.mp3');
 var soundRock = new Audio('./music/broken.mp3');
 var soundPappers = new Audio('./music/pappers.mp3');
 var soundSissors = new Audio('./music/sissors.mp3');
+var soundLose = new Audio('./music/lose.mp3');
 
 
 function jogar() {
@@ -43,7 +46,8 @@ function jogar() {
       pontosDoJogador()
     } else {
       placar.innerHTML = '<<<<<< Voce perdeu 😭😭😭😭 >>>>>>';
-      pontosDoComputador()
+      soundLose.play();
+      pontosDoComputador();
     }
   }
 

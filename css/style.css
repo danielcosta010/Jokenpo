@@ -66,6 +66,7 @@
 }
 .computador {
   width: 450px;
+  margin-top: 1.5rem;
 }
 
 .pontos__jogador, .pontos__computador {
@@ -73,12 +74,12 @@
   border: 1.5px solid;
   border-radius: 5px;
   margin: 1rem;
-  padding: .3rem .5rem;
+  padding: .5rem .7rem;
 }
 @media (max-width: 500px) {
   .computador {
     width: 90vw;
-    margin-top: .7rem;
+    margin-top: 1.5rem;
   }
   #frmjokenpo {
     margin: 0;
