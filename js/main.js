@@ -1,19 +1,19 @@
 var $ = document.querySelector.bind(document);
 
 var pedra = $('#pedra');
-var papel = $('#papel');
-var tesoura = $('#tesoura');
-var aviso = $('.aviso');
-var pc = $('#pc');
-var placar = $('#placar');
-var joga = $('.botao__jogar');
-var resete = $('.botao__reset');
+    papel = $('#papel'),
+    tesoura = $('#tesoura'),
+    aviso = $('.aviso'),
+    pc = $('#pc'),
+    placar = $('#placar'),
+    joga = $('.botao__jogar'),
+    resete = $('.botao__reset'),
 
-var audio = new Audio('./music/jokenpo.mp3');
-var soundRock = new Audio('./music/broken.mp3');
-var soundPappers = new Audio('./music/pappers.mp3');
-var soundSissors = new Audio('./music/sissors.mp3');
-var soundLose = new Audio('./music/lose.mp3');
+    audio = new Audio('./music/jokenpo.mp3'),
+    soundRock = new Audio('./music/broken.mp3'),
+    soundPappers = new Audio('./music/pappers.mp3'),
+    soundSissors = new Audio('./music/sissors.mp3'),
+    soundLose = new Audio('./music/lose.mp3');
 
 
 function jogar() {

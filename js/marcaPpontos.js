@@ -1,8 +1,8 @@
-var pontosJogador = document.querySelector('.pontos__jogador');
-var pontosComputador = document.querySelector('.pontos__computador')
+let pontosJogador = document.querySelector('.pontos__jogador');
+let pontosComputador = document.querySelector('.pontos__computador')
 
-var countJogador = 0;
-var countComputador = 0;
+var countJogador = 0,
+    countComputador = 0;
 
 function pontosDoJogador() {
   countJogador++
